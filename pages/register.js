@@ -6,6 +6,7 @@ import {SiDiscord} from 'react-icons/si'
 import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
 import { useState } from "react"
 import { toast } from 'react-toastify';
+import Link from "next/link"
 
 const Register = () => {
 
@@ -79,8 +80,8 @@ const Register = () => {
         <div className="OnVideo">
                 
                         <div className="TopForm">
-                            <Image src={`/logo.png`} width={80} height={55}></Image>
-                            <a href="#"><SiDiscord className="Icon" /> ديسكورد</a>
+                            <Link href="/"><Image src={`/logo.png`} width={80} height={55}></Image></Link>
+                            <a href="https://discord.gg/DuKwFMn3" target='_blank'><SiDiscord className="Icon" /> ديسكورد</a>
                         </div>
 
 

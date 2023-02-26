@@ -1736,6 +1736,55 @@
             height: 200px;
         }
     }
+
+    .FirstFooter{
+
+    
+        a{
+            font-size: 14px;
+        }
+    
+        .DiscordIcon{
+            font-size: 22px;
+    }
+    
+
+        
+        .RightFirst h1{
+            font-size: 20px;
+        }
+    
+        .RightFirst p{
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media (max-width: 396px) {
+    .RightSecond{
+        
+        gap: 10px;
+        margin: 0px 20px;
+    
+        .SocialIcon{
+            font-size: 35px;
+
+            padding: 10px;
+
+    }
+    }
+    
+    .LeftSecond{
+        margin-left: 10px;
+    }
+
+    .ThirdFooter{
+        p{
+            font-size: 10px;
+        }
+    }
+    
 }
 
 @media (max-width: 370px) {
@@ -1799,6 +1848,67 @@
             p{
                 font-size: 13px;
             }
+        }
+    }
+}
+
+
+@media (max-width: 324px) {
+    
+    .FirstFooter{
+
+    
+        a{
+            font-size: 12px;
+        }
+    
+        .DiscordIcon{
+            font-size: 18px;
+    }
+    
+
+        
+        .RightFirst h1{
+            font-size: 17px;
+        }
+    
+        .RightFirst p{
+            font-size: 11px;
+        }
+    }
+}
+
+@media (max-height: 815px){
+    .SecondLandingDiv{
+        img{
+            margin-top: 50px;
+        }
+    }
+}
+
+
+@media (max-height: 787px){
+    .SecondLandingDiv{
+        img{
+            margin-top: 100px;
+        }
+    }
+}
+
+
+@media (max-height: 742px){
+    .SecondLandingDiv{
+        img{
+            margin-top: 200px;
+        }
+    }
+}
+
+
+@media (max-height: 700px){
+    .SecondLandingDiv{
+        img{
+            margin-top: 300px;
         }
     }
 }

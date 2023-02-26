@@ -4,13 +4,15 @@ import Link from 'next/link'
 import {SiRiotgames} from 'react-icons/si'
 import {GiThornedArrow} from 'react-icons/gi'
 import {FaDiscord, FaFacebookF} from 'react-icons/fa'
-import {BsTwitch, BsGoogle} from 'react-icons/bs'
+import {BsTwitch, BsWhatsapp} from 'react-icons/bs'
 import {AiFillYoutube, AiOutlineClose} from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import {BsTrophy} from 'react-icons/bs'
 import {RiSurveyFill} from 'react-icons/ri'
 import {HiBars4} from 'react-icons/hi2'
 import { useRef } from 'react'
+
+
 export default function Home() {
 
 
@@ -661,7 +663,7 @@ export default function Home() {
 
             <div className='FirstFooter'>
                 <div className='LeftFirst'>
-                    <Link href="#"><FaDiscord className='DiscordIcon' /> تعالى ديسكورد</Link>
+                    <a href="https://discord.gg/DuKwFMn3" target='_blank'><FaDiscord className='DiscordIcon' /> تعالى ديسكورد</a>
                 </div>
 
                 <div className='RightFirst'>
@@ -677,10 +679,10 @@ export default function Home() {
                     </div>
 
                     <div className='RightSecond'>
-                        <Link href="#"><FaFacebookF className='SocialIcon' /></Link>
+                        <a href="https://www.facebook.com/profile.php?id=100090654730601" target='_blank'><FaFacebookF className='SocialIcon' /></a>
                         <Link href="#"><BsTwitch className='SocialIcon' /></Link>
-                        <Link href="#"><FaDiscord className='SocialIcon' /></Link>
-                        <Link href="#"><AiFillYoutube className='SocialIcon' /></Link>
+                        <a href="https://discord.gg/DuKwFMn3" target='_blank'><FaDiscord className='SocialIcon' /></a>
+                        <a href="https://wa.link/aoenrr" target='_blank'><BsWhatsapp className='SocialIcon' /></a>
 
                     </div>
             </div>
