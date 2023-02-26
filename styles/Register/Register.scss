@@ -1,0 +1,223 @@
+
+.RegisterContainer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .BackVideo{
+        width: 100%;
+        height: 100%;
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .OnVideo{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.541);
+        z-index: 1;
+        top: 0;
+
+        .TopForm{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: rgb(8, 8, 8);
+            height: 60px;
+            img{
+                margin-left: 7px;
+            }
+            a{
+                font-family: var(--ArabicLinksFont);
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                color: whitesmoke;
+                margin-right: 15px;
+                .Icon{
+                    font-size: 18px;
+                }
+                transition: .3s all linear;
+                -webkit-transition: .3s all linear;
+                -moz-transition: .3s all linear;
+                -ms-transition: .3s all linear;
+                -o-transition: .3s all linear;
+
+                &:hover{
+                    color: var(--MainColor);
+                }
+}
+        }
+
+       .InnerOnVideo{
+        width: 100%;
+        height: calc(100vh - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        .Form{
+            background-color: rgba(0, 0, 0, 0.664);
+            width: 700px;
+            height: fit-content;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            margin: 0px 5px;
+
+            form{
+                padding: 20px;
+
+                .TwoInputs{
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+
+                    input{
+                        width: 50%;
+                        height: 50px;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 3px solid rgb(44, 44, 44);
+                        outline: none;
+                        transition: .3s all linear;
+                        -webkit-transition: .3s all linear;
+                        -moz-transition: .3s all linear;
+                        -ms-transition: .3s all linear;
+                        -o-transition: .3s all linear;
+                        color: whitesmoke;
+                        font-family: var(--ArabicLinksFont);
+                        padding-left: 15px;
+
+                        &:hover{
+                            border-bottom: 3px solid rgb(88, 88, 88);
+                        }
+
+                        &:focus{
+                            border-bottom: 3px solid whitesmoke;
+                        }
+
+                        &:focus::placeholder{
+                            color: whitesmoke;
+                        }
+                    }
+                }
+
+                .SingleInput{
+                    margin-top: 10px;
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 3px solid rgb(44, 44, 44);
+                        outline: none;
+                        transition: .3s all linear;
+                        -webkit-transition: .3s all linear;
+                        -moz-transition: .3s all linear;
+                        -ms-transition: .3s all linear;
+                        -o-transition: .3s all linear;
+                        color: whitesmoke;
+                        font-family: var(--ArabicLinksFont);
+                        padding-left: 15px;
+
+                        &:hover{
+                            border-bottom: 3px solid rgb(88, 88, 88);
+                        }
+
+                        &:focus{
+                            border-bottom: 3px solid whitesmoke;
+                        }
+
+                        &:focus::placeholder{
+                            color: whitesmoke;
+                        }
+                    }
+                }
+
+                .OptionsInput{
+                    margin-top: 25px;
+                    background-color: transparent;
+                    border: 3px solid rgb(44, 44, 44);
+                    height: 60px;
+                    position: relative;
+                    cursor: var(--PointerCursor);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .3s all linear;
+                    -webkit-transition: .3s all linear;
+                    -moz-transition: .3s all linear;
+                    -ms-transition: .3s all linear;
+                    -o-transition: .3s all linear;
+
+                    .MainP{
+                        font-family: var(--ArabicLinksFont);
+                        color: whitesmoke;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                    .ChooseDiv{
+                        position: absolute;
+                        background-color: black;
+                        top: 60px;
+                        color: wheat;
+                        width: 100%;
+                        z-index: 1;
+                        
+                        p{
+                            cursor: var(--PointerCursor);
+                            font-family: var(--ArabicLinksFont);
+                            color: rgb(70, 70, 70);
+                            padding: 15px;
+                            transition: .3s all linear;
+                            -webkit-transition: .3s all linear;
+                            -moz-transition: .3s all linear;
+                            -ms-transition: .3s all linear;
+                            -o-transition: .3s all linear;
+
+                            &:hover{
+                                color: whitesmoke;
+                                background-color: var(--MainColor);
+                            }
+
+}
+                    }
+                }
+
+                button{
+                    margin-top: 20px;
+                    width: 100%;
+                    font-family: var(--ArabicLinksFont);
+                    font-weight: 600;
+                    color: whitesmoke;
+                    height: 60px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    font-size: 17px;
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+}
+
+            }
+
+        }
+       }
+
+    }
+}
