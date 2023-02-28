@@ -11,7 +11,7 @@ import {BsTrophy} from 'react-icons/bs'
 import {RiSurveyFill} from 'react-icons/ri'
 import {HiBars4} from 'react-icons/hi2'
 import { useRef } from 'react'
-
+import CountUp from 'react-countup'
 
 export default function Home() {
 
@@ -152,9 +152,9 @@ export default function Home() {
                 <div className='SecTwo'>
                     <Image src={'/coins2.png'} width={90} height={90} alt="الكاشات" title="الكاشات" unoptimized></Image>
                     <div className='InnerSecTwo'>
-                        <p>كاشات</p>
-                        <p>اتكسبت</p>
-                        <span>£39,615</span>
+                        <p>هدفنا</p>
+                        <p>نكسّب</p>
+                        <span>£<CountUp end={10000} /></span>
                     </div>
                 </div>
 
@@ -163,9 +163,9 @@ export default function Home() {
                 <div className='SecTwo'>
                     <Image src={'/1s.png'} width={90} height={90} alt="التوب جيمر" title="التوب جيمر" unoptimized></Image>
                     <div className='InnerSecTwo'>
-                        <p>التوب</p>
-                        <p>جيمر</p>
-                        <span>£305,60</span>
+                        <p>اعلى</p>
+                        <p>مكسب</p>
+                        <span>£<CountUp end={300} /></span>
                     </div>
                 </div>
 
@@ -174,9 +174,9 @@ export default function Home() {
                 <div className='SecTwo'>
                     <Image src={'/mouse.png'} width={70} height={90} alt="عدد اللاعيبة" title="عدد اللاعيبة" unoptimized></Image>
                     <div className='InnerSecTwo'>
-                        <p>عدد</p>
-                        <p>اللاعيبة</p>
-                        <span>7502</span>
+                        <p>هدفنا</p>
+                        <p>نوصل لجيمرز</p>
+                        <span><CountUp end={500} /></span>
                     </div>
                 </div>
 
@@ -185,9 +185,9 @@ export default function Home() {
                 <div className='SecTwo'>
                     <Image src={'/tr.png'} width={90} height={90} alt="عدد البطولات" title="عدد البطولات" unoptimized></Image>
                     <div className='InnerSecTwo'>
-                        <p>عدد</p>
-                        <p>البطولات</p>
-                        <span>7502</span>
+                        <p>نعمل</p>
+                        <p>بطولات</p>
+                        <span><CountUp end={100}/></span>
                     </div>
                 </div>
 
@@ -214,7 +214,7 @@ export default function Home() {
                     <p>بمستلزمات إلكترونية - شحن في لعبتك</p>
                     <p>وجبات</p>
                     <p>وحاجات تانية كتير ..! انت دايما كسبان</p>
-                    <button onClick={()=>setLogin(!Login)}>!إكسب چي چي ايزي بوينتس <GiThornedArrow id='ArrowIco' className='ArrowIcon' /></button>
+                    <button onClick={()=>RegisterLink.current.click()}>!إكسب چي چي ايزي بوينتس <GiThornedArrow id='ArrowIco' className='ArrowIcon' /></button>
                 </div>
 
                 <div className='SecondBackGround reveal'>
@@ -262,7 +262,7 @@ export default function Home() {
                     <p>إنتمي لاكبر مجتمع رياضات الكترونية</p>
                     <p>في مصر وخليك وسط إصحابك تيمك</p>
                     <p>وناديك</p>
-                    <button onClick={()=>setLogin(!Login)}>إنضم دلوقتي <GiThornedArrow id='ArrowIco' className='ArrowIcon' /></button>
+                    <button onClick={()=>RegisterLink.current.click()}>إنضم دلوقتي <GiThornedArrow id='ArrowIco' className='ArrowIcon' /></button>
                  </div>
 
                  <Image className='reveal rotImg' src={'/pici.png'} width={550} height={700} alt="سجل العب واكسب" title="سجل العب واكسب"></Image>
@@ -290,7 +290,7 @@ export default function Home() {
                         <h1>جمع صحابك في فريق</h1>
                         <h1>واتحدى فرق تانية</h1>
                         <h1>!.. ونافس ع التصنيف</h1>
-                        <button onClick={()=>setLogin(!Login)}>إنضم</button>
+                        <button onClick={()=>RegisterLink.current.click()}>إنضم</button>
                     </div>
 
                     <div className='SecondFourthRight'>
@@ -529,7 +529,7 @@ export default function Home() {
 
                 <div className='SixthContainerTeams'>
 
-                        <div onClick={()=>setLogin(!Login)} className='SixthRight'>
+                        <div onClick={()=>RegisterLink.current.click()} className='SixthRight'>
 
                            <div className='BlurFourthBackground'></div>
                             
@@ -580,7 +580,7 @@ export default function Home() {
                         </div>
 
 
-                        <div onClick={()=>setLogin(!Login)} className='SixthLeft'>
+                        <div onClick={()=>RegisterLink.current.click()} className='SixthLeft'>
                             <div className='BlurFourthBackground2'></div>
                             <div className='SixthTeam OpTeam'>
                                 <Image src={'/4.webp'} width={320} height={350}></Image>
@@ -649,12 +649,12 @@ export default function Home() {
 
         <div className='gallery'>
 
-            <img onClick={()=>setLogin(!Login)} src={'/val.jpg'} ></img>
+            <img onClick={()=>RegisterLink.current.click()} src={'/val.jpg'} ></img>
 
 
     
 
-            <img onClick={()=>setLogin(!Login)} src={'/lea.jpg'}></img>
+            <img onClick={()=>RegisterLink.current.click()} src={'/lea.jpg'}></img>
 
         </div>
 

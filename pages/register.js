@@ -135,8 +135,8 @@ const Register = () => {
                                 {
                                     Age ?                                 <div className="ChooseDiv">
                                     <p onClick={()=> setSelectedAge('12 - 17')}>12 - 17</p>
-                                    <p onClick={()=> setSelectedAge('18 - 23')}>18 - 23</p>
-                                    <p onClick={()=> setSelectedAge('24 - 30')}>24 - 30</p>
+                                    <p onClick={()=> setSelectedAge('18 - 24')}>18 - 24</p>
+                                    <p onClick={()=> setSelectedAge('25 - 30')}>25 - 30</p>
                                     <p onClick={()=> setSelectedAge('31+')}>31+</p>
                                 </div>   : <></>
                                 }
