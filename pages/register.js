@@ -7,6 +7,7 @@ import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io'
 import { useState } from "react"
 import { toast } from 'react-toastify';
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 const Register = () => {
 
@@ -28,6 +29,7 @@ const Register = () => {
     const [GameID, setGameID] = useState('');
     const [DiscordID, setDiscrodID] = useState('');
     
+    const router = useRouter();
 
     const handleRegister = async (e) =>{
         e.preventDefault();
@@ -56,6 +58,10 @@ const Register = () => {
             toast.warning(data.message)
         }else{
             toast.success('لقد تم تسجيلك بنجاح')
+
+            setTimeout(()=>{
+                router.push('https://forms.gle/tkLeyGkmiXNxVcY47')
+            }, 2000)
         }
 
     }

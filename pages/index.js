@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {SiRiotgames} from 'react-icons/si'
 import {GiThornedArrow} from 'react-icons/gi'
-import {FaDiscord, FaFacebookF} from 'react-icons/fa'
+import {FaDiscord, FaFacebookF, FaTicketAlt} from 'react-icons/fa'
 import {BsTwitch, BsWhatsapp} from 'react-icons/bs'
-import {AiFillYoutube, AiOutlineClose} from 'react-icons/ai'
+import {AiOutlineClose} from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import {BsTrophy} from 'react-icons/bs'
 import {RiSurveyFill} from 'react-icons/ri'
@@ -100,10 +100,10 @@ export default function Home() {
 
                 <div className='InnerMobileHeader'>
                 
-                   <button ><RiSurveyFill id='LandingHeaderIcon' /> قول رأيك</button>
+                   <button onClick={()=> FormLink.current.click()} ><FaTicketAlt id='LandingHeaderIcon' /> اشترك في البطولة</button>
                     <button onClick={()=> RegisterLink.current.click()} ><SiRiotgames id='LandingHeaderIcon' /> إنتمــي</button>
                     <Link className='LinkToRegister' href='/register' ref={RegisterLink}>register</Link>
-                  <Link className='LinkToRegister' href='#' ref={FormLink}>form</Link>
+                  <a target='_blank' className='LinkToRegister' href='https://forms.gle/tkLeyGkmiXNxVcY47' ref={FormLink}>form</a>
                    
                 </div>
 
@@ -120,10 +120,10 @@ export default function Home() {
               </div>
 
               <div className='RightLandingHeader'>
-                  <button ><RiSurveyFill id='LandingHeaderIcon' /> قول رأيك</button>
+                  <button onClick={()=> FormLink.current.click()}><FaTicketAlt id='LandingHeaderIcon' /> اشترك في البطولة</button>
                   <button onClick={()=> RegisterLink.current.click()}><SiRiotgames id='LandingHeaderIcon' /> إنتمــي</button>
                   <Link className='LinkToRegister' href='/register' ref={RegisterLink}>register</Link>
-                  <Link className='LinkToRegister' href='#' ref={FormLink}>form</Link>
+                  <a target='_blank' className='LinkToRegister' href='https://forms.gle/tkLeyGkmiXNxVcY47' ref={FormLink}>form</a>
               </div>
 
               <HiBars4 onClick={()=> setMobileHeader(true)}  className="HeaderBars" />
@@ -146,9 +146,8 @@ export default function Home() {
                     <p>دلوقتي تقدر تجمع بين إنك تلعب.. تشارك في سكريمات</p>
                     <p>!وبطولات.. تكون فريق أو تنضم لنادي.. وانت دايما كسبان</p>
                 </div>
-            </div>
 
-            <div className='OnBlackTwo'>
+                <div className='InnerBlackTwo'>
 
                 <div className='SecTwo'>
                     <Image src={'/coins2.png'} width={90} height={90} alt="الكاشات" title="الكاشات" unoptimized></Image>
@@ -191,6 +190,13 @@ export default function Home() {
                         <span>7502</span>
                     </div>
                 </div>
+
+                </div>
+            </div>
+
+            <div className='OnBlackTwo'>
+
+
 
             </div>
         </div>
