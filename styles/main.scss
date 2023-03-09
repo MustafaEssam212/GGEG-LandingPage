@@ -13,7 +13,7 @@
     --EnglishFont: 'Kanit', sans-serif;
     --MainColor: #FFB431;
     --ArabicLinksFont: 'Alexandria', sans-serif;
-    --PointerCursor: url('/cursor.cur'), pointer;
+   
     --ArabicTitlesFont: 'Lemonada', cursive;
     --SecondEnglish: 'Rubik', sans-serif;
 
@@ -28,7 +28,7 @@
 
 body{
 
-    cursor: url('/cur.png'), default;
+  
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 
 
 body a, body button{
-    cursor: var(--PointerCursor);
+    cursor: pointer;
 }
 
 

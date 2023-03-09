@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {SiRiotgames} from 'react-icons/si'
 import {GiThornedArrow} from 'react-icons/gi'
-import {FaDiscord, FaFacebookF, FaTicketAlt} from 'react-icons/fa'
+import {FaDiscord, FaFacebookF, FaTicketAlt, FaJoint} from 'react-icons/fa'
 import {BsTwitch, BsWhatsapp} from 'react-icons/bs'
 import {AiOutlineClose} from 'react-icons/ai'
 import { useEffect, useState } from 'react'
@@ -101,7 +101,7 @@ export default function Home() {
                 <div className='InnerMobileHeader'>
                 
                    <button onClick={()=> FormLink.current.click()} ><FaTicketAlt id='LandingHeaderIcon' /> اشترك في البطولة</button>
-                    <button onClick={()=> RegisterLink.current.click()} ><SiRiotgames id='LandingHeaderIcon' /> إنتمــي</button>
+                    <button onClick={()=> RegisterLink.current.click()} ><FaJoint id='LandingHeaderIcon' /> إنتمــي</button>
                     <Link className='LinkToRegister' href='/register' ref={RegisterLink}>register</Link>
                   <a target='_blank' className='LinkToRegister' href='https://forms.gle/tkLeyGkmiXNxVcY47' ref={FormLink}>form</a>
                    
@@ -121,7 +121,7 @@ export default function Home() {
 
               <div className='RightLandingHeader'>
                   <button onClick={()=> FormLink.current.click()}><FaTicketAlt id='LandingHeaderIcon' /> اشترك في البطولة</button>
-                  <button onClick={()=> RegisterLink.current.click()}><SiRiotgames id='LandingHeaderIcon' /> إنتمــي</button>
+                  <button onClick={()=> RegisterLink.current.click()}><FaJoint id='LandingHeaderIcon' /> إنتمــي</button>
                   <Link className='LinkToRegister' href='/register' ref={RegisterLink}>register</Link>
                   <a target='_blank' className='LinkToRegister' href='https://forms.gle/tkLeyGkmiXNxVcY47' ref={FormLink}>form</a>
               </div>
